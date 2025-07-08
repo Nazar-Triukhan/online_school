@@ -1,0 +1,96 @@
+.hero{
+  padding: 21px 0 96px 0;
+    @media screen and (min-width: 767px){
+  padding: 62px 0;
+}
+@media screen and (min-width: 992px){
+padding: 68px 0 47px 0;
+}
+&__box{
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 767px){
+  flex-direction: row-reverse;
+}
+
+}
+&__wrap{
+@media screen and (min-width: 767px){
+    margin-right: auto;
+    text-align: left;
+}
+}
+
+  &__light{
+  display: none;
+  }
+  &__title{
+    margin-top: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    @media screen and (min-width: 767px){
+  width: 290px;
+    text-align: start;
+}
+   @media screen and (min-width: 992px){
+  width: 290px;
+}
+  }
+  &__text{
+    width: 100%;
+    color: #8F95A5;
+font-family: Poppins;
+margin-left: auto;
+margin-right: auto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+@media screen and (min-width: 576px){
+  width: 450px;
+}
+@media screen and (min-width: 767px){
+  width: 300px;
+  text-align: start;
+}
+  }
+  &__button{
+    color: #FFF;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+border-radius: 5px;
+background: #263238;
+margin-top: 35px;
+padding: 18px;
+
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+@media screen and (min-width: 576px){
+  padding: 22px 100px;
+  width: 305px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 767px){
+
+}
+  }
+  &__image{
+    width: 100%;
+@media screen and (min-width: 767px){
+  width: 352px;
+}
+    @media screen and (min-width: 992px){
+  width: 460px;
+  transform: translateY(-100px); 
+}
+
+@media screen and (min-width: 1338px){
+  width: 661px;
+}
+  }
+}

@@ -1,0 +1,54 @@
+.header{
+  padding: 39px 0 11px 0;
+  &__box{
+    display: flex;
+    align-items: center;
+    @media screen and (min-width: 992px){
+  justify-content: space-between;
+}
+  }
+  &__img{
+    width: 89px;
+  }
+
+  &__burger{
+    width: 30px;
+    margin-left: auto;
+    @media screen and (min-width: 992px){
+  display: none;
+}
+  }
+
+  &__list{
+    display: none;
+    @media screen and (min-width: 992px){
+  display: flex;
+  gap: 26px;
+}
+  }
+
+  &__link{
+    color: #263238;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+  }
+
+  &__button{
+    display: none;
+    color: #000;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+border-radius: 5px;
+border: 2px solid #263238;
+background-color: transparent;
+padding: 12px 40px;
+    @media screen and (min-width: 992px){
+  display: block;
+}
+  }
+}
