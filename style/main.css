@@ -244,7 +244,15 @@ body {
 @media screen and (min-width: 992px) {
   .skills__list {
     display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 224px 1fr 1fr;
+    grid-template-areas: "spik writ read" "spik lisin lisin";
+    gap: 0;
+    height: 662px;
   }
+}
+.skills__list::nth-child(4) .skills__list__item {
+  display: flex;
 }
 .skills__item {
   border-radius: 5px;
@@ -257,9 +265,26 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.skills__item:nth-child(1) {
+  grid-area: spik;
+}
+.skills__item:nth-child(2) {
+  grid-area: writ;
+}
+.skills__item:nth-child(3) {
+  grid-area: read;
+}
+.skills__item:nth-child(4) {
+  grid-area: lisin;
+}
 .skills__content-wrapper {
   flex-grow: 1;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 992px) {
+  .skills__content-wrapper {
+    flex-grow: 0;
+  }
 }
 .skills__img {
   width: 220px;
@@ -307,4 +332,9 @@ body {
   padding: 14px 43px;
   margin-top: auto;
   align-self: flex-start;
+}
+@media screen and (min-width: 992px) {
+  .skills__button {
+    margin-top: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
